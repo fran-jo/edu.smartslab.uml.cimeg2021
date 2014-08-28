@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--Created by Cimphony RDF XML Serialiser from Open Grid Systems Ltd.
+	 Bundle: com.cimphony.core.emf.rdf v1.0.0
+	Created: 2014-07-09T12:07:52-->
+<rdf:RDF xmlns:cim="http://iec.ch/TC57/2012/CIM-schema-cim16#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+ <cim:SynchronousMachineTimeConstantReactance rdf:ID="_54302da0-b02c-11e3-af35-080027008896">
+  <cim:IdentifiedObject.aliasName>GENROU_DYN</cim:IdentifiedObject.aliasName>
+  <cim:IdentifiedObject.name>Round Rotor Dynamics</cim:IdentifiedObject.name>
+  <cim:SynchronousMachineDynamics.SynchronousMachine rdf:resource="#_6501d560-074e-11e4-aa24-080027008896"/>
+  <cim:SynchronousMachineTimeConstantReactance.rotorType rdf:resource="http://iec.ch/TC57/2012/CIM-schema-cim16#RotorKind.roundRotor"/>
+ </cim:SynchronousMachineTimeConstantReactance>
+ <cim:SynchronousMachineTimeConstantReactance rdf:ID="_5a1a00b0-b02c-11e3-af35-080027008896">
+  <cim:IdentifiedObject.aliasName>GENSAL_DYN</cim:IdentifiedObject.aliasName>
+  <cim:IdentifiedObject.name>Silent Pole Dynamics</cim:IdentifiedObject.name>
+  <cim:SynchronousMachineDynamics.SynchronousMachine rdf:resource="#_15d3a440-074f-11e4-aa24-080027008896"/>
+  <cim:SynchronousMachineTimeConstantReactance.rotorType rdf:resource="http://iec.ch/TC57/2012/CIM-schema-cim16#RotorKind.salientPole"/>
+ </cim:SynchronousMachineTimeConstantReactance>
+ <cim:SynchronousMachine rdf:ID="_6501d560-074e-11e4-aa24-080027008896">
+  <cim:IdentifiedObject.aliasName>GENROU</cim:IdentifiedObject.aliasName>
+  <cim:IdentifiedObject.name>Round Rotor Generator</cim:IdentifiedObject.name>
+  <cim:SynchronousMachine.operatingMode rdf:resource="http://iec.ch/TC57/2012/CIM-schema-cim16#SynchronousMachineOperatingMode.generator"/>
+  <cim:SynchronousMachine.type rdf:resource="http://iec.ch/TC57/2012/CIM-schema-cim16#SynchronousMachineKind.generator"/>
+  <cim:SynchronousMachine.SynchronousMachineDynamics rdf:resource="#_54302da0-b02c-11e3-af35-080027008896"/>
+ </cim:SynchronousMachine>
+ <cim:SynchronousMachine rdf:ID="_15d3a440-074f-11e4-aa24-080027008896">
+  <cim:IdentifiedObject.aliasName>GENSAL</cim:IdentifiedObject.aliasName>
+  <cim:IdentifiedObject.name>Silent Pole Generator</cim:IdentifiedObject.name>
+  <cim:SynchronousMachine.operatingMode rdf:resource="http://iec.ch/TC57/2012/CIM-schema-cim16#SynchronousMachineOperatingMode.generator"/>
+  <cim:SynchronousMachine.type rdf:resource="http://iec.ch/TC57/2012/CIM-schema-cim16#SynchronousMachineKind.generator"/>
+  <cim:SynchronousMachine.SynchronousMachineDynamics rdf:resource="#_5a1a00b0-b02c-11e3-af35-080027008896"/>
+ </cim:SynchronousMachine>
+</rdf:RDF>
