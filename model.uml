@@ -674,8 +674,8 @@
     </packagedElement>
     <packagedElement xmi:type="uml:Interface" xmi:id="_M0pbkAwiEeSQ89BYBGDm-g" name="LoadDynamics"/>
     <packagedElement xmi:type="uml:Class" xmi:id="_xALZoAwiEeSQ89BYBGDm-g" name="LoadResponseCharacteristic">
-      <generalization xmi:type="uml:Generalization" xmi:id="_nknbMB8HEeSAS9xlUEy3FQ" general="_J3NLIAwDEeSQ89BYBGDm-g"/>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="_LtOEAAwjEeSQ89BYBGDm-g" name="pConstantImpedance" type="_aAeegPY7EeOEH4-6XGzlMA">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_LtOEAAwjEeSQ89BYBGDm-g" name="pConstantImpedance">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XI3A4AwjEeSQ89BYBGDm-g"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_XI3n8AwjEeSQ89BYBGDm-g" value="1"/>
       </ownedAttribute>
@@ -697,23 +697,30 @@
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XI5dIAwjEeSQ89BYBGDm-g"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_XI6EMAwjEeSQ89BYBGDm-g" value="1"/>
       </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="_BJ3MgB8HEeSAS9xlUEy3FQ" name="pVoltageExponent" type="_aAeegPY7EeOEH4-6XGzlMA">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_BJ3MgB8HEeSAS9xlUEy3FQ" name="pVoltageExponent">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ILSA0B8HEeSAS9xlUEy3FQ"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ILSn4B8HEeSAS9xlUEy3FQ" value="1"/>
       </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="_CV46wB8HEeSAS9xlUEy3FQ" name="qVoltageExponent" type="_aAeegPY7EeOEH4-6XGzlMA">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_CV46wB8HEeSAS9xlUEy3FQ" name="qVoltageExponent">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_cWkOYB8HEeSAS9xlUEy3FQ"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_cWk1cB8HEeSAS9xlUEy3FQ" value="1"/>
       </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="_fEP8oB8HEeSAS9xlUEy3FQ" name="pFrequencyExponent">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_fEP8oB8HEeSAS9xlUEy3FQ" name="pConstantCurrent">
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_hQvCUB8HEeSAS9xlUEy3FQ"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_hQvpYB8HEeSAS9xlUEy3FQ" value="1"/>
       </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="_iyKY0B8HEeSAS9xlUEy3FQ" name="qFrequencyExponent">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_iyKY0B8HEeSAS9xlUEy3FQ" name="qConstantCurrent">
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_lgdLEB8HEeSAS9xlUEy3FQ"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_lgdyIB8HEeSAS9xlUEy3FQ" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_mw7TgDHWEeSHlaXd4o4RiA" name="exponentModel">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_6_-mwDHWEeSHlaXd4o4RiA"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_6__N0DHWEeSHlaXd4o4RiA" value="1"/>
       </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_NXWOEAwkEeSQ89BYBGDm-g" name="ec_ld_1" memberEnd="_NXWOEQwkEeSQ89BYBGDm-g _NXVnAAwkEeSQ89BYBGDm-g">
@@ -738,14 +745,24 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_MlawsxQNEeSkYPnNjZZOQQ" value="*"/>
       </ownedEnd>
     </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_O4__oDHXEeSHlaXd4o4RiA" name="ec_lrc" memberEnd="_O4__oTHXEeSHlaXd4o4RiA _O4_YkDHXEeSHlaXd4o4RiA">
+      <ownedEnd xmi:type="uml:Property" xmi:id="_O4__oTHXEeSHlaXd4o4RiA" name="energyConsumer" type="_J3NLIAwDEeSQ89BYBGDm-g" association="_O4__oDHXEeSHlaXd4o4RiA">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_O4__ojHXEeSHlaXd4o4RiA"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_O4__ozHXEeSHlaXd4o4RiA" value="*"/>
+      </ownedEnd>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_O4_YkDHXEeSHlaXd4o4RiA" name="loadResponseCharacteristic" type="_xALZoAwiEeSQ89BYBGDm-g" association="_O4__oDHXEeSHlaXd4o4RiA">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_O4_YkTHXEeSHlaXd4o4RiA"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_O4_YkjHXEeSHlaXd4o4RiA" value="1"/>
+      </ownedEnd>
+    </packagedElement>
   </packagedElement>
   <packagedElement xmi:type="uml:Package" xmi:id="_jHZvIAwmEeSQ89BYBGDm-g" name="Bus Model">
     <packagedElement xmi:type="uml:Class" xmi:id="_sryD4PY3EeOEH4-6XGzlMA" name="TopologicalNode">
-      <ownedAttribute xmi:type="uml:Property" xmi:id="_ThLAIPY4EeOEH4-6XGzlMA" name="baseVoltage" type="_qdzJYPY3EeOEH4-6XGzlMA" association="_ThPRkPY4EeOEH4-6XGzlMA">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_ThLAIPY4EeOEH4-6XGzlMA" name="pInjection" type="_aAeegPY7EeOEH4-6XGzlMA" association="_ThPRkPY4EeOEH4-6XGzlMA">
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ThLAIfY4EeOEH4-6XGzlMA"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ThLAIvY4EeOEH4-6XGzlMA" value="1"/>
       </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="_s_m6oPY-EeOEH4-6XGzlMA" name="voltage" visibility="public" type="_iydKIPY-EeOEH4-6XGzlMA">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_s_m6oPY-EeOEH4-6XGzlMA" name="qInjection" visibility="public" type="_aAeegPY7EeOEH4-6XGzlMA">
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="__QR1oPY-EeOEH4-6XGzlMA"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="__QTDwPY-EeOEH4-6XGzlMA" value="1"/>
         <defaultValue xmi:type="uml:LiteralString" xmi:id="__QU48PY-EeOEH4-6XGzlMA">
@@ -756,7 +773,8 @@
       <ownedAttribute xmi:type="uml:Port" xmi:id="_n6FHsA5aEeSpoKADt1tVBA" name="t2" type="_CjSisPY4EeOEH4-6XGzlMA" aggregation="composite"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_CjSisPY4EeOEH4-6XGzlMA" name="Terminal">
-      <ownedAttribute xmi:type="uml:Property" xmi:id="_EAgDYPY_EeOEH4-6XGzlMA" name="power" type="_7-NA4PY-EeOEH4-6XGzlMA">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_EAgDYPY_EeOEH4-6XGzlMA" name="connected">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_y8MFgCF6EeSIqc4hRTPcXA"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_y8MskCF6EeSIqc4hRTPcXA" value="1"/>
       </ownedAttribute>
@@ -767,6 +785,9 @@
       <ownedAttribute xmi:type="uml:Property" xmi:id="_6JwWoA56EeSpoKADt1tVBA" name="connectivityNode" type="_w0_BoBNGEeSndPGoVx7-lg">
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_6JwWoQ56EeSpoKADt1tVBA"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_6JwWog56EeSpoKADt1tVBA" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_GDWmwDNaEeS8BoaDxhPJHw" name="sequenceNumber">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
       </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_ThPRkPY4EeOEH4-6XGzlMA" name="tn_bv_1" memberEnd="_ThPRkfY4EeOEH4-6XGzlMA _ThLAIPY4EeOEH4-6XGzlMA">
@@ -1000,6 +1021,32 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_bojQ0h8SEeSAS9xlUEy3FQ" value="*"/>
       </ownedEnd>
     </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_WfHRsDGxEeSHlaXd4o4RiA" name="Core"/>
+    <packagedElement xmi:type="uml:Package" xmi:id="_YpWUoDGxEeSHlaXd4o4RiA" clientDependency="_KPVrsDG9EeSHlaXd4o4RiA" name="Wires">
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_KPVrsDG9EeSHlaXd4o4RiA" name="Dependency1" client="_YpWUoDGxEeSHlaXd4o4RiA" supplier="_WfHRsDGxEeSHlaXd4o4RiA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_oAgD0DG8EeSHlaXd4o4RiA" clientDependency="_JwQjADG9EeSHlaXd4o4RiA" name="Topology">
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_JwQjADG9EeSHlaXd4o4RiA" name="Dependency1" client="_oAgD0DG8EeSHlaXd4o4RiA" supplier="_WfHRsDGxEeSHlaXd4o4RiA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_qF_wsDG8EeSHlaXd4o4RiA" clientDependency="_NXqukDG9EeSHlaXd4o4RiA" name="Generation">
+      <packagedElement xmi:type="uml:Package" xmi:id="_rENFYDG8EeSHlaXd4o4RiA" clientDependency="_P_pdcDG9EeSHlaXd4o4RiA" name="Production">
+        <packagedElement xmi:type="uml:Dependency" xmi:id="_P_pdcDG9EeSHlaXd4o4RiA" name="Dependency1" client="_rENFYDG8EeSHlaXd4o4RiA" supplier="_YpWUoDGxEeSHlaXd4o4RiA"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_NXqukDG9EeSHlaXd4o4RiA" name="Dependency1" client="_qF_wsDG8EeSHlaXd4o4RiA" supplier="_YpWUoDGxEeSHlaXd4o4RiA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_r5z3sDG8EeSHlaXd4o4RiA" clientDependency="_M8cLIDG9EeSHlaXd4o4RiA" name="LoadModel">
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_M8cLIDG9EeSHlaXd4o4RiA" name="Dependency1" client="_r5z3sDG8EeSHlaXd4o4RiA" supplier="_YpWUoDGxEeSHlaXd4o4RiA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_RQ0IQDNbEeS8BoaDxhPJHw" name="bv_ce" memberEnd="_RQ0IQTNbEeS8BoaDxhPJHw _RQyTEDNbEeS8BoaDxhPJHw">
+      <ownedEnd xmi:type="uml:Property" xmi:id="_RQ0IQTNbEeS8BoaDxhPJHw" name="baseVoltage" type="_qdzJYPY3EeOEH4-6XGzlMA" association="_RQ0IQDNbEeS8BoaDxhPJHw">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_RQ0IQjNbEeS8BoaDxhPJHw"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_RQ0IQzNbEeS8BoaDxhPJHw" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_RQyTEDNbEeS8BoaDxhPJHw" name="conductingEquipment" type="__3d1oPY3EeOEH4-6XGzlMA" association="_RQ0IQDNbEeS8BoaDxhPJHw">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_RQyTETNbEeS8BoaDxhPJHw"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_RQyTEjNbEeS8BoaDxhPJHw" value="*"/>
+      </ownedEnd>
+    </packagedElement>
   </packagedElement>
   <packagedElement xmi:type="uml:Package" xmi:id="_SV7CECI3EeSzo75hJLGG8g" name="Switch Model">
     <packagedElement xmi:type="uml:Class" xmi:id="_VhY4gCI3EeSzo75hJLGG8g" name="Switch">
@@ -1051,4 +1098,133 @@
     </packagedElement>
   </packagedElement>
   <packagedElement xmi:type="uml:Package" xmi:id="_osvOECwyEeSrv700Aj0ETQ" name="Examples"/>
+  <packagedElement xmi:type="uml:Package" xmi:id="_7PE_QDHBEeSHlaXd4o4RiA" name="TapChanger Model">
+    <packagedElement xmi:type="uml:Class" xmi:id="__tcA8DHBEeSHlaXd4o4RiA" name="TapChanger">
+      <generalization xmi:type="uml:Generalization" xmi:id="_jMtEADHEEeSHlaXd4o4RiA" general="_ebU1cBf2EeS2famAvgL40A"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_bNj4oDHDEeSHlaXd4o4RiA" name="controlEnabled">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_iSMZADHDEeSHlaXd4o4RiA"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iSNAEDHDEeSHlaXd4o4RiA" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_cCMakDHDEeSHlaXd4o4RiA" name="highStep">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_lTyhwDHDEeSHlaXd4o4RiA"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_lTzI0DHDEeSHlaXd4o4RiA" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_cugG8DHDEeSHlaXd4o4RiA" name="initialDelay">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_yUjCUDHDEeSHlaXd4o4RiA"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_yUk3gDHDEeSHlaXd4o4RiA" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_dhtskDHDEeSHlaXd4o4RiA" name="ltcFlag">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_24K-gDHDEeSHlaXd4o4RiA"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_24LlkDHDEeSHlaXd4o4RiA" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_eWf_gDHDEeSHlaXd4o4RiA" name="step">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_55Fx0DHDEeSHlaXd4o4RiA"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_55GY4DHDEeSHlaXd4o4RiA" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_fEfG4DHDEeSHlaXd4o4RiA" name="subsequentDelay">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="___XMgDHDEeSHlaXd4o4RiA"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="___XzkDHDEeSHlaXd4o4RiA" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_Ab0J4DHCEeSHlaXd4o4RiA" name="RatioTapChanger">
+      <generalization xmi:type="uml:Generalization" xmi:id="_etaOMDHEEeSHlaXd4o4RiA" general="__tcA8DHBEeSHlaXd4o4RiA"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_pFnqEDHCEeSHlaXd4o4RiA" name="stepVoltageIncrement">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_vN2MkDHCEeSHlaXd4o4RiA"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_vN3asDHCEeSHlaXd4o4RiA" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_qmK20DHCEeSHlaXd4o4RiA" name="tculControlMode" type="_5TEwIDHCEeSHlaXd4o4RiA">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_KjiV4DHEEeSHlaXd4o4RiA"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Kji88DHEEeSHlaXd4o4RiA" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_BG_04DHCEeSHlaXd4o4RiA" name="RegulatingControl">
+      <generalization xmi:type="uml:Generalization" xmi:id="_NREoQDHGEeSHlaXd4o4RiA" general="_ebU1cBf2EeS2famAvgL40A"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_0arWcDHFEeSHlaXd4o4RiA" name="discrete">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_6tLPQDHFEeSHlaXd4o4RiA"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_6tL2UDHFEeSHlaXd4o4RiA" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_1LlO8DHFEeSHlaXd4o4RiA" name="enabled">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_9KatwDHFEeSHlaXd4o4RiA"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_9KbU0DHFEeSHlaXd4o4RiA" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_2Et2YDHFEeSHlaXd4o4RiA" name="mode" type="_CbPrADHCEeSHlaXd4o4RiA">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ByDnQDHGEeSHlaXd4o4RiA"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ByEOUDHGEeSHlaXd4o4RiA" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_2uSX0DHFEeSHlaXd4o4RiA" name="monitoredPhase" type="_IMXGEAtXEeSzb8IuUnmicA">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_E18PADHGEeSHlaXd4o4RiA"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_E182EDHGEeSHlaXd4o4RiA" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_3Xz18DHFEeSHlaXd4o4RiA" name="targetValue">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_HktiYDHGEeSHlaXd4o4RiA"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_HkuwgDHGEeSHlaXd4o4RiA" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_Bv5A4DHCEeSHlaXd4o4RiA" name="TapChangerControl">
+      <generalization xmi:type="uml:Generalization" xmi:id="_Oe34IDHGEeSHlaXd4o4RiA" general="_BG_04DHCEeSHlaXd4o4RiA"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_tVU50DHEEeSHlaXd4o4RiA" name="limitVoltage" type="_aAeegPY7EeOEH4-6XGzlMA">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0doZQDHEEeSHlaXd4o4RiA"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0dpnYDHEEeSHlaXd4o4RiA" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_uWNIADHEEeSHlaXd4o4RiA" name="lineDropCompensation">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_38OnEDHEEeSHlaXd4o4RiA"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_38POIDHEEeSHlaXd4o4RiA" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_vJg0QDHEEeSHlaXd4o4RiA" name="lineDropR">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_6kN9ADHEEeSHlaXd4o4RiA"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_6kOkEDHEEeSHlaXd4o4RiA" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_wA02wDHEEeSHlaXd4o4RiA" name="lineDropX">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_8k6pcDHEEeSHlaXd4o4RiA"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_8k7QgDHEEeSHlaXd4o4RiA" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_CbPrADHCEeSHlaXd4o4RiA" name="RegulatingControlModeKind">
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_O0lmQDHCEeSHlaXd4o4RiA" name="voltage"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_QCJlkDHCEeSHlaXd4o4RiA" name="activePower"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_RaClkDHCEeSHlaXd4o4RiA" name="reactivePower"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_SVycIDHCEeSHlaXd4o4RiA" name="current"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_Tb8L4DHCEeSHlaXd4o4RiA" name="admittance"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_UVBI8DHCEeSHlaXd4o4RiA" name="timeScheduled"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_Vdw5sDHCEeSHlaXd4o4RiA" name="temperature"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_WZ9cMDHCEeSHlaXd4o4RiA" name="powerFactor"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_5TEwIDHCEeSHlaXd4o4RiA" name="TransformerControlMode">
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_CEHH8DHDEeSHlaXd4o4RiA" name="voltage"/>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_DSsa8DHDEeSHlaXd4o4RiA" name="reactive"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_gcRR0DHGEeSHlaXd4o4RiA" name="tch_tchC" memberEnd="_gcRR0THGEeSHlaXd4o4RiA _gcQDsDHGEeSHlaXd4o4RiA">
+      <ownedEnd xmi:type="uml:Property" xmi:id="_gcRR0THGEeSHlaXd4o4RiA" name="tapChanger" type="__tcA8DHBEeSHlaXd4o4RiA" association="_gcRR0DHGEeSHlaXd4o4RiA">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_gcRR0jHGEeSHlaXd4o4RiA"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_gcRR0zHGEeSHlaXd4o4RiA" value="*"/>
+      </ownedEnd>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_gcQDsDHGEeSHlaXd4o4RiA" name="tapChangerControl" type="_Bv5A4DHCEeSHlaXd4o4RiA" association="_gcRR0DHGEeSHlaXd4o4RiA">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_gcQDsTHGEeSHlaXd4o4RiA"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_gcQDsjHGEeSHlaXd4o4RiA" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_v9rcEDKIEeSe0tD8ViG99A" name="rtc_te" memberEnd="_v9sDIDKIEeSe0tD8ViG99A _v9o_0DKIEeSe0tD8ViG99A">
+      <ownedEnd xmi:type="uml:Property" xmi:id="_v9sDIDKIEeSe0tD8ViG99A" name="ratioTapChanger" type="_Ab0J4DHCEeSHlaXd4o4RiA" association="_v9rcEDKIEeSe0tD8ViG99A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_v9sDITKIEeSe0tD8ViG99A"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_v9sDIjKIEeSe0tD8ViG99A" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_v9o_0DKIEeSe0tD8ViG99A" name="transformerEnd" type="_HNy7IAtOEeSzb8IuUnmicA" association="_v9rcEDKIEeSe0tD8ViG99A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_v9o_0TKIEeSe0tD8ViG99A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_v9o_0jKIEeSe0tD8ViG99A" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+  </packagedElement>
 </uml:Model>

@@ -49,15 +49,45 @@
     <availablePage>
       <emfPageIdentifier href="model.notation#_tFy5ACwyEeSrv700Aj0ETQ"/>
     </availablePage>
+    <availablePage>
+      <emfPageIdentifier href="model.notation#_xxNv8DG8EeSHlaXd4o4RiA"/>
+    </availablePage>
+    <availablePage>
+      <emfPageIdentifier href="model.notation#_ZI_1UDHCEeSHlaXd4o4RiA"/>
+    </availablePage>
+    <availablePage>
+      <emfPageIdentifier href="model.notation#_k6VboDNSEeS8BoaDxhPJHw"/>
+    </availablePage>
+    <availablePage>
+      <emfPageIdentifier href="model.notation#_pI7jADNSEeS8BoaDxhPJHw"/>
+    </availablePage>
+    <availablePage>
+      <emfPageIdentifier href="model.notation#_98y-EDNTEeS8BoaDxhPJHw"/>
+    </availablePage>
   </pageList>
   <sashModel currentSelection="//@sashModel/@windows.0/@children.0">
     <windows>
       <children xsi:type="di:TabFolder">
         <children>
+          <emfPageIdentifier href="model.notation#_N4H88CF6EeSIqc4hRTPcXA"/>
+        </children>
+        <children>
+          <emfPageIdentifier href="model.notation#_k6VboDNSEeS8BoaDxhPJHw"/>
+        </children>
+        <children>
+          <emfPageIdentifier href="model.notation#_pI7jADNSEeS8BoaDxhPJHw"/>
+        </children>
+        <children>
           <emfPageIdentifier href="model.notation#_tFy5ACwyEeSrv700Aj0ETQ"/>
         </children>
         <children>
-          <emfPageIdentifier href="model.notation#_igroMB1PEeSpSK4L94uuOg"/>
+          <emfPageIdentifier href="model.notation#_98y-EDNTEeS8BoaDxhPJHw"/>
+        </children>
+        <children>
+          <emfPageIdentifier href="model.notation#_KSAmUB8TEeSAS9xlUEy3FQ"/>
+        </children>
+        <children>
+          <emfPageIdentifier href="model.notation#_-zl3sB8REeSAS9xlUEy3FQ"/>
         </children>
       </children>
     </windows>
