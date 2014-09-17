@@ -1164,7 +1164,7 @@
       </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_qdzJYPY3EeOEH4-6XGzlMA" name="BaseVoltage">
-      <ownedAttribute xmi:type="uml:Property" xmi:id="_TptmMPY6EeOEH4-6XGzlMA" name="nominalVoltage" visibility="public" type="_aAeegPY7EeOEH4-6XGzlMA">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_TptmMPY6EeOEH4-6XGzlMA" name="nominalVoltage" visibility="public" type="_guj4MDzpEeSHQvuGSBvywA">
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_pnaMkPY6EeOEH4-6XGzlMA"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_pnbasPY6EeOEH4-6XGzlMA" value="1"/>
         <defaultValue xmi:type="uml:LiteralString" xmi:id="_pnco0PY6EeOEH4-6XGzlMA">
@@ -1206,6 +1206,16 @@
       <ownedEnd xmi:type="uml:Property" xmi:id="_RQyTEDNbEeS8BoaDxhPJHw" name="conductingEquipment" type="__3d1oPY3EeOEH4-6XGzlMA" association="_RQ0IQDNbEeS8BoaDxhPJHw">
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_RQyTETNbEeS8BoaDxhPJHw"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_RQyTEjNbEeS8BoaDxhPJHw" value="*"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_cXotcD2oEeSVuuqcF-6jlQ" name="bv_te" memberEnd="_cXotcT2oEeSVuuqcF-6jlQ _cXmRMD2oEeSVuuqcF-6jlQ">
+      <ownedEnd xmi:type="uml:Property" xmi:id="_cXotcT2oEeSVuuqcF-6jlQ" name="baseVoltage" type="_qdzJYPY3EeOEH4-6XGzlMA" association="_cXotcD2oEeSVuuqcF-6jlQ">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_cXotcj2oEeSVuuqcF-6jlQ"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_cXotcz2oEeSVuuqcF-6jlQ" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_cXmRMD2oEeSVuuqcF-6jlQ" name="transformerEnd" type="_HNy7IAtOEeSzb8IuUnmicA" association="_cXotcD2oEeSVuuqcF-6jlQ">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_cXmRMT2oEeSVuuqcF-6jlQ"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_cXmRMj2oEeSVuuqcF-6jlQ" value="*"/>
       </ownedEnd>
     </packagedElement>
   </packagedElement>
@@ -1289,6 +1299,9 @@
       <ownedAttribute xmi:type="uml:Property" xmi:id="_fEfG4DHDEeSHlaXd4o4RiA" name="subsequentDelay" type="_oujT8DzxEeSHQvuGSBvywA">
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="___XMgDHDEeSHlaXd4o4RiA"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="___XzkDHDEeSHlaXd4o4RiA" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_3ewusD5LEeSvmevYS_yQLw" name="lowStep">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
       </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_Ab0J4DHCEeSHlaXd4o4RiA" name="RatioTapChanger">
