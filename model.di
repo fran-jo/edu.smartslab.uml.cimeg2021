@@ -69,10 +69,13 @@
     <windows>
       <children xsi:type="di:TabFolder">
         <children>
-          <emfPageIdentifier href="model.notation#_ZI_1UDHCEeSHlaXd4o4RiA"/>
+          <emfPageIdentifier href="model.notation#_KSAmUB8TEeSAS9xlUEy3FQ"/>
         </children>
         <children>
-          <emfPageIdentifier href="model.notation#_yBqdIBx7EeSF8vNb3iizTQ"/>
+          <emfPageIdentifier href="model.notation#_-zl3sB8REeSAS9xlUEy3FQ"/>
+        </children>
+        <children>
+          <emfPageIdentifier href="model.notation#_-mf_MCI4EeSzo75hJLGG8g"/>
         </children>
       </children>
     </windows>

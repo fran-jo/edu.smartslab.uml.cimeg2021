@@ -171,32 +171,28 @@
     <packagedElement xmi:type="uml:Class" xmi:id="_RSNqsPY3EeOEH4-6XGzlMA" name="ACLineSegment">
       <generalization xmi:type="uml:Generalization" xmi:id="_ELaXEPY4EeOEH4-6XGzlMA" general="_STXlsPY3EeOEH4-6XGzlMA"/>
       <generalization xmi:type="uml:Generalization" xmi:id="_YFkCQB1REeSpSK4L94uuOg" general="_STXlsPY3EeOEH4-6XGzlMA"/>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="_e6kWwPY3EeOEH4-6XGzlMA" name="r" visibility="public">
-        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_e6kWwPY3EeOEH4-6XGzlMA" name="r" visibility="public" type="__ZdfQDzpEeSHQvuGSBvywA">
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fSBNcPY3EeOEH4-6XGzlMA"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fSCbkPY3EeOEH4-6XGzlMA" value="1"/>
         <defaultValue xmi:type="uml:LiteralString" xmi:id="_fSE30PY3EeOEH4-6XGzlMA">
           <value xsi:nil="true"/>
         </defaultValue>
       </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="_kN__QPY3EeOEH4-6XGzlMA" name="x" visibility="public">
-        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_kN__QPY3EeOEH4-6XGzlMA" name="x" visibility="public" type="_AGBDQDzqEeSHQvuGSBvywA">
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_kst7kPY3EeOEH4-6XGzlMA"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ksvJsPY3EeOEH4-6XGzlMA" value="1"/>
         <defaultValue xmi:type="uml:LiteralString" xmi:id="_kswX0PY3EeOEH4-6XGzlMA">
           <value xsi:nil="true"/>
         </defaultValue>
       </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="_ktVmoPY3EeOEH4-6XGzlMA" name="bch" visibility="public">
-        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_ktVmoPY3EeOEH4-6XGzlMA" name="bch" visibility="public" type="_tVdxgDztEeSHQvuGSBvywA">
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_k5GKsPY3EeOEH4-6XGzlMA"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_k5HY0PY3EeOEH4-6XGzlMA" value="1"/>
         <defaultValue xmi:type="uml:LiteralString" xmi:id="_k5JOAPY3EeOEH4-6XGzlMA">
           <value xsi:nil="true"/>
         </defaultValue>
       </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="_Bk5V4PY6EeOEH4-6XGzlMA" name="gch" visibility="public">
-        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_Bk5V4PY6EeOEH4-6XGzlMA" name="gch" visibility="public" type="_usufYDztEeSHQvuGSBvywA">
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_TFjwQPY6EeOEH4-6XGzlMA"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_TFkXUPY6EeOEH4-6XGzlMA" value="1"/>
         <defaultValue xmi:type="uml:LiteralString" xmi:id="_TFmMgPY6EeOEH4-6XGzlMA">
@@ -242,18 +238,10 @@
       </ownedEnd>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_58sfIDp5EeS7Sdxg4o-VNw" name="PerLenghtSequenceImpedance">
-      <ownedAttribute xmi:type="uml:Property" xmi:id="_-r4yIDp5EeS7Sdxg4o-VNw" name="r">
-        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="__4u_wDp5EeS7Sdxg4o-VNw" name="x">
-        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="_CVn48Dp6EeS7Sdxg4o-VNw" name="bch">
-        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="_IK31EDp6EeS7Sdxg4o-VNw" name="gch">
-        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
-      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_-r4yIDp5EeS7Sdxg4o-VNw" name="r" type="__ZdfQDzpEeSHQvuGSBvywA"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="__4u_wDp5EeS7Sdxg4o-VNw" name="x" type="_AGBDQDzqEeSHQvuGSBvywA"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_CVn48Dp6EeS7Sdxg4o-VNw" name="bch" type="_tVdxgDztEeSHQvuGSBvywA"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_IK31EDp6EeS7Sdxg4o-VNw" name="gch" type="_usufYDztEeSHQvuGSBvywA"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_h8yT8Dp6EeS7Sdxg4o-VNw" name="plsi_acls_1" memberEnd="_h8yT8Tp6EeS7Sdxg4o-VNw _h8wewDp6EeS7Sdxg4o-VNw">
       <ownedEnd xmi:type="uml:Property" xmi:id="_h8yT8Tp6EeS7Sdxg4o-VNw" name="perLenghtSequenceImpedance" type="_58sfIDp5EeS7Sdxg4o-VNw" association="_h8yT8Dp6EeS7Sdxg4o-VNw">
