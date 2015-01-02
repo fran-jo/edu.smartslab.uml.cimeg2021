@@ -762,23 +762,19 @@
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XI9HgAwjEeSQ89BYBGDm-g"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_XI9ukAwjEeSQ89BYBGDm-g" value="1"/>
       </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="_WViVQAwdEeSQ89BYBGDm-g" name="p">
-        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_WViVQAwdEeSQ89BYBGDm-g" name="p" type="_N1JXoDzoEeSHQvuGSBvywA">
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XI9ukQwjEeSQ89BYBGDm-g"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_XI-VoAwjEeSQ89BYBGDm-g" value="1"/>
       </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="_YnAooAwdEeSQ89BYBGDm-g" name="pfixed">
-        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_YnAooAwdEeSQ89BYBGDm-g" name="pfixed" type="_N1JXoDzoEeSHQvuGSBvywA">
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XI-8sAwjEeSQ89BYBGDm-g"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_XI_jwAwjEeSQ89BYBGDm-g" value="1"/>
       </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="_aiGcUAwdEeSQ89BYBGDm-g" name="q">
-        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_aiGcUAwdEeSQ89BYBGDm-g" name="q" type="_Rg6ewDzoEeSHQvuGSBvywA">
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XI_jwQwjEeSQ89BYBGDm-g"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_XJAK0AwjEeSQ89BYBGDm-g" value="1"/>
       </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="_cdJMsAwdEeSQ89BYBGDm-g" name="qfixed">
-        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_cdJMsAwdEeSQ89BYBGDm-g" name="qfixed" type="_Rg6ewDzoEeSHQvuGSBvywA">
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XJAx4AwjEeSQ89BYBGDm-g"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_XJBY8AwjEeSQ89BYBGDm-g" value="1"/>
       </ownedAttribute>
@@ -791,6 +787,7 @@
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_MlZikRQNEeSkYPnNjZZOQQ"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_MlZikhQNEeSkYPnNjZZOQQ" value="1"/>
       </ownedAttribute>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_ER-GEHDOEeSTWc8ABh3VxA" name="Equation(Code)"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_KnZ5AAwDEeSQ89BYBGDm-g" name="EnergyConsumerPhase">
       <ownedAttribute xmi:type="uml:Property" xmi:id="_nk6LUAwdEeSQ89BYBGDm-g" name="pfixed">
@@ -908,7 +905,7 @@
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_O4__ojHXEeSHlaXd4o4RiA"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_O4__ozHXEeSHlaXd4o4RiA" value="*"/>
       </ownedEnd>
-      <ownedEnd xmi:type="uml:Property" xmi:id="_O4_YkDHXEeSHlaXd4o4RiA" name="loadResponseCharacteristic" type="_xALZoAwiEeSQ89BYBGDm-g" association="_O4__oDHXEeSHlaXd4o4RiA">
+      <ownedEnd xmi:type="uml:Property" xmi:id="_O4_YkDHXEeSHlaXd4o4RiA" name="loadResponse" type="_xALZoAwiEeSQ89BYBGDm-g" association="_O4__oDHXEeSHlaXd4o4RiA">
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_O4_YkTHXEeSHlaXd4o4RiA"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_O4_YkjHXEeSHlaXd4o4RiA" value="1"/>
       </ownedEnd>
@@ -1504,4 +1501,5 @@
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_O0UeIGm1EeSsZ4KGem_DWw" name="Enumeration"/>
     <packagedElement xmi:type="uml:Class" xmi:id="_gJBOMGm3EeSsZ4KGem_DWw" name="FaultImpedance"/>
   </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_jbwTcHDMEeSTWc8ABh3VxA" name="SystemModel1"/>
 </uml:Model>
